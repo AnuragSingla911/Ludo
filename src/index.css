@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(15, 30px);
+  grid-template-rows: repeat(15, 30px);
+  width: 450px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.path {
+  background: #f5f5f5;
+}
+
+.token {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.token.red {
+  background: red;
+}
+
+.token.blue {
+  background: blue;
+}
+
+.token.green {
+  background: green;
+}
+
+.token.yellow {
+  background: yellow;
+}
